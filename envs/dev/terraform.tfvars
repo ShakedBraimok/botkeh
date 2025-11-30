@@ -1,7 +1,7 @@
 # Terraform variables
 
 environment = "dev"
-project_name = "senora"
+project_name = "botkeh"
 aws_region = "us-east-1"
 actions_path = "../bot/src/slack_bot/actions"
 compute_type = "BUILD_GENERAL1_SMALL"
