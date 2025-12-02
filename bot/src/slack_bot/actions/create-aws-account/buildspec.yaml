@@ -4,14 +4,12 @@ phases:
   pre_build:
     commands:
       - echo "Starting an AWS account creation action"
-      - echo "User ID: $USER_ID"
-      - echo "User Name: $USER_NAME"
 
   build:
     commands:
       - echo "Processing request..."
-      - sleep 5
-      - echo "Example action completed successfully"
+      - ./create_aws_account_using_cli.sh 
+      - echo "AWS account creation is completed successfully"
 
   post_build:
     commands:
