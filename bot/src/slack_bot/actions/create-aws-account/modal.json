@@ -1,0 +1,90 @@
+{
+	"title": {
+		"type": "plain_text",
+		"text": "AWS Onboarding"
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit"
+	},
+	"type": "modal",
+	"callback_id": "onboarding_account_request",
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel"
+	},
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Using this submission you'll get your own AWS account for the onboarding trainings."
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"block_id": "team_selection",
+			"label": {
+				"type": "plain_text",
+				"text": "Team"
+			},
+			"element": {
+				"type": "static_select",
+				"action_id": "team",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select your team"
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Core"
+						},
+						"value": "core"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "DevOps"
+						},
+						"value": "devops"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Data"
+						},
+						"value": "data"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "UI"
+						},
+						"value": "ui"
+					}
+				]
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "email_input",
+			"label": {
+				"type": "plain_text",
+				"text": "Email"
+			},
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "email",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "name@company.com"
+				}
+			}
+		}
+	]
+}
